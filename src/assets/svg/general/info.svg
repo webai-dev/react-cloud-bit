@@ -1,0 +1,13 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-Bar" transform="translate(-1864.000000, -91.000000)" fill="#D6DBE1" fill-rule="nonzero">
+            <g id="Top-Bar-Copy">
+                <g id="Group"  transform="translate(1864.000000, 91.000000)">
+                    <path class='info-circle' d="M12,2.4 C6.75,2.4 2.4,6.75 2.4,12 C2.4,17.25 6.75,21.6 12,21.6 C17.25,21.6 21.6,17.25 21.6,12 C21.6,6.75 17.25,2.4 12,2.4 M12,24 C5.4,24 0,18.6 0,12 C0,5.4 5.4,0 12,0 C18.6,0 24,5.4 24,12 C24,18.6 18.6,24 12,24" id="Fill-1"></path>
+                    <path class='info-i' d="M12,20.1 C12.6,20.1 13.2,19.5 13.2,18.9 L13.2,9.45 L10.8,9.45 L10.8,18.9 C10.8,19.5 11.4,20.1 12,20.1" id="Fill-7"></path>
+                    <circle class='info-i' id="Oval-3" cx="12" cy="6.45" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

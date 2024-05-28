@@ -1,0 +1,89 @@
+.curved-tabs {
+  padding: $size12 $size32 0 $size32;
+  border-bottom: 1px solid $gray-3;
+  margin-bottom: 0 !important;
+
+  > div {
+    position: relative;
+    height: 50px; //magic number
+    width: 80px; //magic number
+
+    &.active {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 3px;
+        transform: translateX(-50%);
+        width: 114px;
+        height: 50px;
+        background-image: url('../svg/legal/curve.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+        z-index: 1;
+      }
+    }
+
+    &:not(.active) {
+      cursor: pointer;
+    }
+  }
+
+  .svg-wrap {
+    position: relative;
+    top: $size16;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.fancy-tabs {
+  margin-bottom: $size22 !important;
+
+  > div {
+    font-size: $size16;
+    font-weight: 600;
+    padding: 0 $size32;
+    position: relative;
+    color: $gray-3;
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    &.active {
+      color: $black;
+      &:before {
+        content: '';
+        width: 32px;
+        height: 36px;
+        // background-image: url('../svg/legal/pencil_stroke.svg'); if a background img will add, change this
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 34px;
+        z-index: 1;
+      }
+    }
+
+    &:not(.active) {
+      cursor: pointer;
+    }
+  }
+}
+
+body.blur.modal-open {
+  #root {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+  .modal-backdrop {
+    background-color: initial !important;
+  }
+}

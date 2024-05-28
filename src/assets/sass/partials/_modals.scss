@@ -1,0 +1,107 @@
+.modal-open .modal {
+  @extend .d-flex;
+  align-items: center;
+}
+
+.modal {
+  &.modal-preview {
+    .modal-dialog {
+      width: 100%;
+      max-width: 100%;
+      min-height: 100vh;
+      margin: 0;
+
+      .modal-content {
+        background-color: transparent;
+        height: 100%;
+        min-height: 100vh;
+        width: 100vw;
+        color: #fff;
+
+        .modal-body {
+          padding: 0 $size16 $size16 $size16;
+          @extend .d-flex;
+          @extend .align-items-center;
+          @extend .justify-content-center;
+        }
+      }
+    }
+
+    + .modal-backdrop.show {
+      opacity: 0.8;
+    }
+  }
+
+  .modal-body {
+    .prevent-modal-body-overflow {
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: rgba(60, 72, 88, 1);
+}
+
+.modal-backdrop.show {
+  opacity: 0.7 !important;
+}
+
+.terms-modal {
+  width: 100%;
+  max-width: 1148px;
+
+  .modal-content {
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.21) !important;
+  }
+
+  .modal-main {
+    padding: $size22 $size32 $size32 $size32;
+    min-height: 400px;
+  }
+
+  .terms {
+    height: 340px;
+    border: 1px solid #d8dbe2;
+    padding: $size26 $size24 $size8 $size24;
+    position: relative;
+
+    @include media-breakpoint-up(xl) {
+      height: 520px;
+    }
+
+    .scrollbar {
+      padding-bottom: $size40;
+    }
+  }
+
+  .terms-form {
+    padding: 0 $size32 $size32 $size48;
+    font-size: $size16;
+    font-weight: normal;
+
+    .checkedBox,
+    .uncheckedBox {
+      margin-right: $size24 !important;
+    }
+  }
+
+  .tab-pane {
+    max-height: initial !important;
+  }
+
+  .opacity-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: $size40;
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), #fff);
+  }
+
+  .text {
+    color: $public-text;
+    font-weight: normal;
+  }
+}

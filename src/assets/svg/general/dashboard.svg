@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="dashboard-icon">
+    <g id="Dashboard">
+        <rect class="dashboard-icon--1" x="11" width="9" height="9" rx="1" ry="1" fill="#D6DBE1"/>
+        <rect class="dashboard-icon--2" y="11" width="9" height="9" rx="1" ry="1" fill="#D6DBE1"/>
+        <path class="dashboard-icon--3" d="M8,0H1A.94.94,0,0,0,0,1V8A.94.94,0,0,0,1,9H8A.94.94,0,0,0,9,8V1A.94.94,0,0,0,8,0ZM7,7H2V2H7Z" fill="#D6DBE1"/>
+        <path class="dashboard-icon--4" d="M19,11H12a.94.94,0,0,0-1,1v7a.94.94,0,0,0,1,1h7a.94.94,0,0,0,1-1V12A.94.94,0,0,0,19,11Zm-1,7H13V13h5Z" fill="#D6DBE1"/>
+    </g>
+</svg>

@@ -1,0 +1,114 @@
+@mixin placeholder($color, $size:'', $opacity: '', $weight: '') {
+  &::-webkit-input-placeholder {
+    color: $color;
+    @if $size != '' {
+      font-size: $size;
+    }
+    @if $opacity != '' {
+      opacity: $opacity;
+    }
+    @if $weight != '' {
+      font-weight: $weight;
+    } @else {
+      font-weight: 500;
+    }
+    font-family: $font-family-base;
+    font-style: normal;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    @if $size != '' {
+      font-size: $size;
+    }
+    @if $opacity != '' {
+      opacity: $opacity;
+    }
+    @if $weight != '' {
+      font-weight: $weight;
+    } @else {
+      font-weight: 500;
+    }
+    font-family: $font-family-base;
+    font-style: normal;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    @if $size != '' {
+      font-size: $size;
+    }
+    @if $opacity != '' {
+      opacity: $opacity;
+    }
+    @if $weight != '' {
+      font-weight: $weight;
+    } @else {
+      font-weight: 500;
+    }
+    font-family: $font-family-base;
+    font-style: normal;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    @if $size != '' {
+      font-size: $size;
+    }
+    @if $opacity != '' {
+      opacity: $opacity;
+    }
+    @if $weight != '' {
+      font-weight: $weight;
+    } @else {
+      font-weight: 500;
+    }
+    font-family: $font-family-base;
+    font-style: normal;
+  }
+}
+
+// Mixins
+$unit: $size8;
+@mixin magic_mixin($type, $multiple1, $multiple2: '', $multiple3: '', $multiple4: '') {
+  @if $type == 'margin' or $type == 'padding' {
+    @if $multiple4 != '' {
+      #{$type}: $unit * $multiple1 $unit * $multiple2 $unit * $multiple3 $unit * $multiple4;
+    } @else if $multiple3 != '' {
+      #{$type}: $unit * $multiple1 $unit * $multiple2 $unit * $multiple3;
+    } @else if $multiple2 != '' {
+      #{$type}: $unit * $multiple1 $unit * $multiple2;
+    } @else {
+      #{$type}: $unit * $multiple1;
+    }
+  } @else {
+    #{$type}: $unit * $multiple1;
+  }
+}
+
+@mixin easingTimingFunction () {
+  -webkit-transition: all 0s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 0s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* easeOutQuad */
+
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* easeOutQuad */
+}
+
+@mixin transform ($value) {
+  transform: $value;
+  -ms-transform: $value;
+  -webkit-transform: $value;
+}
+
+@mixin transitionDuration ($duration) {
+  transition-duration: $duration;
+  -webkit-transition-duration: $duration;
+}
+
+
+@mixin color-opacity($type, $color, $opacity: 0.3) {
+    #{$type}: rgba($color, $opacity);
+}

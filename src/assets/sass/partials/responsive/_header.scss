@@ -1,0 +1,255 @@
+@include media-breakpoint-down(md) {
+  html.prevent-scroll,
+  html.prevent-scroll body {
+    overflow: hidden;
+  }
+}
+
+#menu-toggle {
+  z-index: 101;
+
+  @include media-breakpoint-down(sm) {
+    height: 24px;
+    padding-right: 0;
+  }
+
+  .hamburger-box {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      height: 14px;
+    }
+
+    .hamburger-inner {
+      display: block;
+      top: 50%;
+      margin-top: -2px;
+      width: 32px;
+      height: 2px;
+      border-radius: 0px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease;
+      background: $public-btn;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 0;
+        width: 24px;
+      }
+    }
+
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 2px;
+      background-color: #000;
+      border-radius: 0px;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease;
+      background: $public-btn;
+
+      @include media-breakpoint-down(sm) {
+        width: 24px;
+      }
+    }
+
+    .hamburger-inner {
+      &::after {
+        bottom: -10px;
+
+        @include media-breakpoint-down(sm) {
+          bottom: -6px;
+        }
+      }
+      &::before {
+        top: -10px;
+
+        @include media-breakpoint-down(sm) {
+          top: -6px;
+        }
+      }
+    }
+  }
+
+  .hamburger--squeeze {
+    .hamburger-inner {
+      transition-duration: 0.075s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+      &::before {
+        transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+      }
+
+      &::after {
+        transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+    }
+  }
+
+  &.open {
+    .hamburger-inner {
+      transform: rotate(45deg);
+      transition-delay: 0.12s;
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      background: $white;
+
+      &::before {
+        top: 0;
+        opacity: 0;
+        transition: top 0.075s ease,
+        opacity 0.075s 0.12s ease;
+        background: $white;
+        background: $white;
+      }
+
+      &::after {
+        background: $white;
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    }
+  }
+}
+
+#navbarMenu {
+  @include media-breakpoint-down(md) {
+    position: absolute;
+    top: -2.5rem;
+    left: calc(-100vw - 2.5rem);
+    padding: auto;
+
+    display: flex;
+    height: 100vh !important;
+    width: 100vw !important;
+    z-index: 100;
+
+    transition: left 1s;
+
+    background: $public-link;
+  }
+
+  @include media-breakpoint-down(sm) {
+    top: -1.5rem;
+    left: calc(-100vw - 1.5rem);
+  }
+
+  &.show {
+    @include media-breakpoint-down(md) {
+      left: -2.5rem;
+      transition: left 1s;
+    }
+
+    @include media-breakpoint-down(sm) {
+      left: -1.5rem;
+    }
+  }
+
+  >ul {
+    @include media-breakpoint-down(md) {
+      margin: auto;
+    }
+
+    li {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        @include media-breakpoint-down(md) {
+          position: relative;
+        }
+
+        &.active {
+          @include media-breakpoint-down(sm) {
+            font-weight: 600;
+          }
+
+          &::before {
+            @include media-breakpoint-down(md) {
+              display: block;
+              position: absolute;
+              top: 0.8rem;
+              left: -2rem;
+              width: 1.5rem;
+              height: 2px;
+              border-radius: 0px;
+              content: "";
+              background: $white;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        .btn {
+          padding: 0.5rem 3rem !important;
+        }
+      }
+    }
+
+    a {
+      @include media-breakpoint-down(md) {
+        font-size: $size24;
+        font-weight: 300;
+        color: $white;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-weight: 100;
+      }
+
+      &.active {
+        @include media-breakpoint-down(md) {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .btn {
+      @include media-breakpoint-down(md) {
+        padding: 0.5rem 4.5rem !important;
+        border-radius: $size24;
+        border: 1px solid $white;
+        margin-top: 0.5rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .menu-footer {
+    position: absolute;
+    bottom: 0;
+    height: 3.5rem;
+    width: 100%;
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+
+    .copyright {
+      margin-left: 2.5rem;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    .social-wrap {
+      margin-right: 2.5rem;
+
+      .white-svg {
+        * {
+          fill: $white !important;
+        }
+      }
+    }
+  }
+}

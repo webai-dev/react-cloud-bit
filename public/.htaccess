@@ -1,0 +1,23 @@
+RewriteEngine On  
+RewriteRule .git /404 [L]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^ /index.html [L]
+
+# Leverage Browser Caching
+<IfModule mod_headers.c>
+ <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|svg|swf)$">
+  Header set Cache-Control "max-age=2678400, public”
+ </filesmatch>
+ <filesmatch "\.(css)$">
+  Header set Cache-Control "max-age=7200, private, must-revalidate”
+ </filesmatch>
+ <filesmatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=7200, private, must-revalidate”
+ </filesmatch>
+ <filesmatch "\.(js)$">
+  Header set Cache-Control "max-age=7200, private”
+ </filesmatch>
+</IfModule>

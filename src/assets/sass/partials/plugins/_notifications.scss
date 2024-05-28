@@ -1,0 +1,50 @@
+.notifications-wrapper {
+  .notification {
+    .notification-title {
+      white-space: nowrap;
+      &:before {
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 0.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &.notification-success {
+      .notification-title {
+        &:before {
+          background-image: url('../svg/alerts/success.svg');
+        }
+      }
+    }
+
+    &.notification-error {
+      .notification-title {
+        &:before {
+          background-image: url('../svg/alerts/error.svg');
+        }
+      }
+    }
+
+    &.notification-info {
+      .notification-title {
+        &:before {
+          background-image: url('../svg/alerts/info.svg');
+        }
+      }
+    }
+
+    &.notification-warning {
+      .notification-title {
+        &:before {
+          background-image: url('../svg/alerts/warning.svg');
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="bin-icon">
+  <g id="Bin">
+    <path class="bin-icon--1" d="M17,20H3a1,1,0,0,1-1-1V7H4V18H16V7h2V19A1,1,0,0,1,17,20Z" fill="#3c4858"/>
+    <path class="bin-icon--2" d="M19,3H13V1a1,1,0,0,0-1-1H8A1,1,0,0,0,7,1V3H1A1,1,0,0,0,1,5H19a1,1,0,0,0,0-2Z" fill="#85b7d9"/>
+  </g>
+</svg>

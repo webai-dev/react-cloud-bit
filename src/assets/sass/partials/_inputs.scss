@@ -1,0 +1,147 @@
+.form-group-wrapper {
+  &.search-wrapper {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 32px;
+      top: 12px;
+      background: url('../svg/actions/search.svg') no-repeat;
+      display: block;
+      width: 16px;
+      height: 16px;
+      z-index: 1;
+    }
+
+    .form-control {
+      @extend .pl-5;
+      height: 40px;
+    }
+  }
+  &.align-top {
+    @extend .align-items-start;
+  }
+
+  label {
+    font-size: $size14;
+  }
+}
+
+.form-group {
+  @extend .d-flex;
+  @extend .align-items-center;
+
+  &.aligned-top {
+    @extend .align-items-start;
+    > label {
+      padding-top: $size8;
+    }
+  }
+
+  &.error {
+    .form-control-label {
+      color: $red;
+    }
+  }
+
+  &.disabled {
+    .form-control-label {
+      color: $input-border-color;
+    }
+  }
+}
+
+.form-control-label {
+  font-weight: 400;
+  font-size: $size14;
+  @extend .mr-2;
+  min-width: $size64;
+
+  + .input-wrapper,
+  + .form-control {
+    flex: 1;
+  }
+
+  &.disabled {
+    color: $disabled;
+  }
+}
+
+.form-control {
+  @include placeholder($input-placeholder-color, $size14, 1, 400);
+  font-size: $size14;
+  height: 32px;
+  color: $input-color;
+  box-shadow: 0px 0px 0px $input-border-color;
+
+  &:hover {
+    box-shadow: 0px 0px 10px $input-border-color;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+
+  &[disabled] {
+    color: $input-border-color;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.form-control-lg {
+  height: 40px;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.Select-control {
+  * {
+    font-size: $size14;
+  }
+}
+
+.Select-option,
+.Select-menu-outer {
+  font-size: $size14;
+}
+
+.Select--multi .Select-value-icon {
+  padding: 2px 4px;
+}
+
+.checkbox {
+  cursor: pointer;
+
+  .uncheckedBox {
+    display: inline-block;
+    min-width: $size16;
+    max-width: $size16;
+    height: $size16;
+    border: 1px solid $input-border-color;
+    transition: border 0.3s;
+
+    &:hover {
+      border: 1px solid $main;
+    }
+  }
+
+  .checkedBox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: $size16;
+    max-width: $size16;
+    height: $size16;
+    line-height: $size16;
+    text-align: center;
+    background-color: $main;
+    border: 1px solid $main;
+    color: white;
+    font-size: $size8;
+  }
+}

@@ -1,0 +1,437 @@
+@mixin animation($prop) {
+  animation: $prop;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+.btn {
+  outline: none !important;
+  cursor: pointer;
+
+  border-radius: $border-radius-base;
+  font-size: $size14;
+  line-height: $size14;
+  height: $size40;
+  font-weight: 400;
+
+  border: none;
+  box-shadow: none !important;
+
+  &.btn-smaller {
+    height: $size32;
+  }
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.btn-primary {
+    color: #fff;
+  }
+
+  &.btn-white {
+    color: $text-head;
+    border: 1px solid $lines-gray;
+
+    &:hover {
+      background: $lines-gray;
+    }
+  }
+
+  &.btn-empty {
+    background: none !important;
+    text-transform: initial;
+    box-shadow: none !important;
+    border: none;
+
+    &:focus,
+    &:hover {
+      background: none;
+    }
+  }
+
+  &.btn-remove-link {
+    @extend .btn-outline-danger;
+    padding: 0;
+    height: auto;
+    background: 0 !important;
+    box-shadow: none !important;
+    &:hover,
+    &:active {
+      color: darken($red, 15%) !important;
+    }
+  }
+
+  &.btn-icon {
+    @extend .d-inline-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+
+  &.btn-create {
+    @extend .d-inline-flex;
+    @extend .align-items-center;
+
+    &:before {
+      content: '';
+      background: url('../svg/actions/create.svg') no-repeat;
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      @extend .mr-1;
+    }
+
+    &.btn-reverse {
+      color: $primary;
+
+      &:before {
+        background: url('../svg/actions/create-reverse.svg') no-repeat;
+      }
+
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+
+  &.btn-back {
+    @extend .btn-create;
+    color: $primary;
+
+    &:before {
+      background: url('../svg/actions/back.svg') no-repeat;
+    }
+
+    &:hover {
+      color: $main;
+    }
+  }
+
+  &.btn-dark {
+    background: $text-head;
+  }
+
+  &.btn-arrow {
+    @extend .d-inline-flex;
+    @extend .align-items-center;
+
+    div {
+      height: inherit !important;
+
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &.btn-open {
+      div svg {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &.btn-small-share {
+    height: 1rem;
+
+    div {
+      height: 1rem;
+      width: 1rem;
+    }
+
+    span {
+      font-size: $size12;
+      line-height: $size14;
+    }
+  }
+
+  &.btn-small-border {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    min-width: $size24;
+    max-width: $size24;
+
+    > div {
+      margin: 0 auto;
+    }
+
+    &.btn-open,
+    &:hover {
+      // border: 1px solid $text-head;
+      svg * {
+        fill: $text-head !important;
+      }
+    }
+  }
+
+  &.btn-border {
+    background: none;
+    border: 1px solid $lines-gray;
+    color: $text-head;
+
+    &:hover,
+    &.btn-open {
+      border-color: $main;
+      color: $main;
+    }
+  }
+
+  &.btn-border-reverse {
+    background: none;
+    border: 1px solid $blue;
+    color: $text-head;
+
+    &:hover,
+    &.btn-open {
+      border-color: $text-head;
+    }
+  }
+
+  &.btn-select {
+    width: $size16;
+    height: $size16;
+    border: 1px solid $lines-gray;
+    border-radius: 0;
+    background: none;
+    padding: 0;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    position: relative;
+
+    &:before {
+      transform-origin: left top;
+      border-right: 2px solid transparent;
+      border-top: 2px solid transparent;
+      content: '';
+      display: block;
+      height: 10px;
+      left: 2px;
+      position: absolute;
+      top: 8px;
+      width: 5px;
+      transform: scaleX(-1) rotate(180deg + -45deg);
+      @extend .transition;
+    }
+
+    &:hover,
+    &.active {
+      border-color: $main;
+    }
+
+    &.active {
+      background: $main;
+
+      &:before {
+        border-color: #fff;
+        @include animation(check 0.8s);
+      }
+    }
+  }
+
+  &.btn-flagged {
+    border-radius: $border-radius-base;
+    background-color: $lines-gray;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    position: relative;
+
+    > div {
+      @extend .pr-1;
+
+      .flagged-svg {
+        .flag-outline {
+          fill: $icon-outline;
+        }
+      }
+    }
+
+    .flagged-num {
+      @extend .transition;
+      color: $head;
+    }
+
+    &:hover,
+    &.active {
+      background: $icon-flagged;
+      color: #fff;
+
+      > div {
+        .flagged-svg {
+          .flag-outline {
+            fill: #fff;
+          }
+        }
+      }
+
+      .flagged-num {
+        color: #fff;
+      }
+    }
+  }
+
+  &.btn-public,
+  &.btn-orange {
+    color: #fff;
+  }
+
+  &.btn-main-create {
+    font-weight: 600;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+    .create-plus-svg {
+      height: $size24;
+      padding-left: $size16;
+      margin-left: $size32;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+      svg * {
+        fill: #fff !important;
+      }
+    }
+  }
+
+  &.btn-arrow-back-icon {
+    &:before {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: $size8;
+
+      width: 10px;
+      height: 10px;
+      border: solid $text-head;
+      border-color: currentColor;
+      border-width: 0 2px 2px 0;
+      transform: rotate(135deg);
+      padding: 2px;
+    }
+
+    &.btn-arrow-back-primary {
+      color: $primary;
+    }
+
+    &:hover {
+      color: $main;
+    }
+  }
+
+  &.btn-light {
+    color: #fff;
+  }
+
+  &.btn-color-palette {
+    padding: $size8 $size4;
+    width: 100%;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-between;
+    border-bottom: 1px solid $lines-gray;
+    border-radius: 0;
+    height: auto;
+    color: transparent;
+
+    &:before {
+      content: '';
+      background: currentColor;
+      height: $size4;
+      width: 100%;
+      margin-right: $size8;
+    }
+
+    &:after {
+      color: $head;
+      margin-right: $size4;
+      border-top: 5px solid;
+      border-right: 5px solid transparent;
+      border-bottom: 0;
+      border-left: 5px solid transparent;
+    }
+
+    + .dropdown-menu {
+      max-width: 100%;
+    }
+  }
+
+  &.btn-clear-selected {
+    position: relative;
+    &:before {
+      transform-origin: left top;
+      border-right: 2px solid transparent;
+      border-top: 2px solid transparent;
+      content: '';
+      display: block;
+      height: 10px;
+      left: 2px;
+      position: absolute;
+      top: 8px;
+      width: 5px;
+      transform: scaleX(-1) rotate(180deg + -45deg);
+      @extend .transition;
+    }
+
+    &.semi-active {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: $size8;
+        transform: rotate(0deg);
+        top: 6px;
+        left: 3px;
+        height: 1px;
+        background: $shared-folder;
+      }
+      &:hover {
+        &:before {
+          background: $head;
+        }
+      }
+    }
+    &:hover {
+      border-color: $head;
+    }
+    &.active {
+      background-color: $main;
+      border-color: $main;
+      &:before {
+        border-color: #fff;
+        @include animation(check 0.8s);
+      }
+    }
+  }
+}
+
+.close-icon {
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: $red;
+    left: 0;
+    border-radius: 2px;
+    @extend .mt-1;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

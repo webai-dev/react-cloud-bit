@@ -1,0 +1,349 @@
+// Colors
+$blue: #85b7d9 !default;
+$red: #d85252 !default;
+$yellow: #f2dd86 !default;
+$green: #02b875 !default;
+$cyan: #17a2b8 !default;
+$dark-blue: #42566e;
+$light-blue: #deebf7 !default;
+$gold: #edc624; // Golden Dream
+$gray: #e7ebee;
+$white: #fff;
+$icon-outline: #3c4858;
+$icon-inactive: #d6dbe1;
+$icon-flagged: #ff5a5f;
+
+$gray-0: #f5f8fa;
+$gray-1: #f9f9f9; //the lightest
+$gray-2: #f0f4f6;
+$gray-3: #d8dbe2;
+
+$primary: $blue;
+$main: #3c8bc0;
+$secondary: #8492a6;
+$head: #3c4858;
+
+$cancel: $red;
+$error: $red;
+$success: $green;
+$disabled: #e0e6ed;
+$selected: #f0f7fb;
+$row-selected: rgba(224, 230, 237, 0.3);
+
+$public-text: #313638;
+$public-link: #61c0da;
+$public-btn: #61c0da;
+$public-sec: #828586;
+$public-almost-black: #00011f;
+$public-light-bg: #fbfbfc;
+$public-light-gray: #8e9fa6;
+$public-light-gray-color: #e3e5e6;
+$public-border: #e9e9e9;
+$public-orange: #fddc01;
+
+$public-input-border-color: #dcdcdc;
+$public-bg-blue-line: #e2f2f2;
+
+$public-container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  lap: 1440
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  landscape: 1024px,
+  xl: 1200px,
+  lap: 1440px,
+  hd: 1680px
+) !default;
+
+$alert-success-bg: #d3f3cc;
+$alert-success-color: #496644;
+$alert-success-border: rgba(83, 113, 78, 0.3);
+
+$alert-error-bg: #f2bfbc;
+$alert-error-color: #ba151b;
+$alert-error-border: rgba(186, 21, 27, 0.3);
+
+$alert-info-bg: #bfe5f6;
+$alert-info-color: #2473ab;
+$alert-info-border: rgba(36, 115, 171, 0.3);
+
+$alert-warning-bg: #fff4e4;
+$alert-warning-color: #916617;
+$alert-warning-border: rgba(145, 102, 23, 0.3);
+
+// Texts
+$text-head: $head; // headers, title - Oxford Blue
+$text-main: $main; // primary text, links - Cadet Blue
+$text-sec: $secondary; // secondary text text - Cadet Blue-1
+
+$lines-gray: #e0e6ed; // Borders, lines
+$bg-gray: #fafafa; // Sidebar bg
+$zone-gray: #f7fafc;
+$scrollbar-gray: rgba(33, 34, 36, 0.18);
+$thumb-gray: #eaecef;
+
+$border-lines-menu: rgba(216, 221, 229, 0.2);
+$border-shadow-dropdown: rgba(0, 0, 0, 0.175);
+$border-lines-dropdown: $lines-gray;
+$border-gray: $bg-gray;
+$border-lines-menu: rgba(216, 221, 229, 0.2);
+$border-shadow-dropdown: rgba(0, 0, 0, 0.175);
+
+$shared-folder: #8492a6;
+
+// Scaffolding
+$body-bg: #fff;
+$text-color: $text-head;
+$body-color: $text-head;
+$link-color: $blue;
+$link-hover-color: $text-main;
+$link-hover-decoration: none;
+
+// Bootstrap
+$icon-font-path: '../fonts/bootstrap/';
+
+// Bootstrap Colors
+$gray-dark: $text-main; // body text
+
+// Typography
+$font-family-base: 'proxima-nova';
+$font-family-sans-serif: 'proxima-nova';
+$font-weight-base: 400;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+// $font-size-base: 1.4rem;
+// $line-height-base: 1.2;
+$text-color: $text-main;
+$headings-font-weight: 500;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.5
+    ),
+    2: $spacer,
+    3: (
+      $spacer * 1.5
+    ),
+    4: (
+      $spacer * 2
+    ),
+    5: (
+      $spacer * 2.5
+    ),
+    6: (
+      $spacer * 3
+    ),
+    7: (
+      $spacer * 3.5
+    ),
+    8: (
+      $spacer * 4
+    ),
+    9: (
+      $spacer * 4.5
+    ),
+    10: (
+      $spacer * 5
+    ),
+    11: (
+      $spacer * 5.5
+    ),
+    12: (
+      $spacer * 6
+    ),
+    13: (
+      $spacer * 6.5
+    ),
+    14: (
+      $spacer * 7
+    ),
+    15: (
+      $spacer * 7.5
+    ),
+    16: (
+      $spacer * 8
+    ),
+    17: (
+      $spacer * 8.5
+    ),
+    18: (
+      $spacer * 9
+    ),
+    19: (
+      $spacer * 9.5
+    ),
+    20: (
+      $spacer * 10
+    )
+  ),
+  $spacers
+);
+
+$size2: 0.125rem; // 2px
+$size4: 0.25rem; // 4px
+$size8: map-get($spacers, 1); // 8px
+$size10: 0.65rem; // 10px
+$size12: 0.75rem; // 12px
+$size14: 0.875rem; // 14px
+$size16: map-get($spacers, 2); // 16px
+$size18: 1.125rem; // 18px
+$size20: 1.25rem; // 20px
+$size22: 1.375rem; // 22px
+$size24: map-get($spacers, 3); // 24px
+$size26: 1.625rem; // 26px
+$size32: map-get($spacers, 4); // 32px
+$size34: 2.125rem; // 34px
+$size40: map-get($spacers, 5); // 40px
+$size48: map-get($spacers, 6); // 48px
+$size56: map-get($spacers, 7); // 56px
+$size64: map-get($spacers, 8); // 64px
+$size72: map-get($spacers, 9); // 72px
+$size80: map-get($spacers, 10); // 80px
+$size88: map-get($spacers, 11); // 88px
+$size96: map-get($spacers, 12); // 96px
+$size104: map-get($spacers, 13); // 104px
+$size112: map-get($spacers, 14); // 112px
+$size120: map-get($spacers, 15); // 120px
+$size128: map-get($spacers, 16); // 128px
+$size136: map-get($spacers, 17); // 136px
+$size144: map-get($spacers, 18); // 144px
+$size152: map-get($spacers, 19); // 152px
+$size160: map-get($spacers, 20); // 160px
+
+$h1-font-size: $size48;
+$h2-font-size: $size40;
+$h3-font-size: $size24;
+$h4-font-size: $size32;
+$h5-font-size: $size24;
+$h6-font-size: $size16;
+
+// Navbar
+$navbar-default-bg: #fff;
+$navbar-height: 64px;
+$navbar-border-radius: 0;
+$navbar-default-border: none;
+$navbar-margin-bottom: 0;
+
+// Buttons
+$btn-default-color: $text-color;
+$btn-border-radius-small: 0;
+$btn-border-radius-base: 0;
+$btn-border-radius-large: 0;
+
+// Components
+$border-radius-base: 3px;
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Grid System
+$grid-gutter-width: 2rem;
+
+//Scrollbar
+$scroll-color: #dedede;
+
+//seperator label
+$seperator: #ebeef2;
+
+$dropdown-box-shadow: 4px 6px 32px -3px rgba(158, 158, 158, 1) !default;
+
+// Forms
+$form-group-margin-bottom: $size24;
+$input-btn-padding-y: $size8;
+$input-btn-padding-x: $size16;
+$input-color: $text-head;
+$input-focus-color: $text-head;
+$input-border-color: $lines-gray;
+$input-border-radius: 3px;
+$input-placeholder-color: $text-sec;
+$input-focus-border-color: $primary;
+$input-disabled-bg: #fff;
+$input-padding-y: $size4;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+$header-h: 128px;
+$header-h-full: 80px;
+$sidebar-w: 264px;
+$right-sidebar-w: 400px;
+$banner-h: 40px;
+// $input-color: $text-sec;
+
+$theme-colors: (
+  main: $main,
+  primary: $primary,
+  secondary: $secondary,
+  success: $head,
+  info: $blue,
+  warning: $gold,
+  danger: $red,
+  light: $lines-gray,
+  dark: $gray,
+  public: $public-btn,
+  black: $public-almost-black,
+  orange: $public-orange,
+  green: $green,
+  white: $white,
+  icon-inactive: $icon-inactive
+) !default;
+
+$sidebar-active: $light-blue;
+
+// Bits GRID
+$col-width: 14rem; // 224px
+$col-height: 6.5rem; // 104px
+$grid-gutter: 2rem; // 32px
+$grid-template-columns: (
+  xs: 6,
+  xl: 10
+);
+
+$bit-header: $size48;
+$bit-footer: $size40;
+
+$bit-colors: (
+  1: #d50401,
+  2: #e67c73,
+  3: #f4511e,
+  4: #f6bf25,
+  5: #33b67a,
+  6: #0a8043,
+  7: #039ae4,
+  8: #3f51b5,
+  9: #7886cb,
+  10: #8e24aa,
+  11: #616161,
+  12: #009688
+);
+
+$bit-colors-secondary: (
+  1: #fc7674,
+  2: #ffc0ba,
+  3: #ff9270,
+  4: #ffe6a2,
+  5: #8edfba,
+  6: #49b47d,
+  7: #67c6f5,
+  8: #6d80e6,
+  9: #a1b1ff,
+  10: #c756e5,
+  11: #a8a8a8,
+  12: #17ccbb
+);

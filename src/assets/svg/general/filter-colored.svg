@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18">
+  <g data-name="Settings">
+    <rect fill="#85b7d9" x="5" width="4" height="8" rx="1" ry="1"/>
+    <rect fill="#85b7d9" x="11" y="10" width="4" height="8" rx="1" ry="1"/>
+    <path fill="#3c4858" d="M1 5h2V3H1a1 1 0 0 0 0 2zM20 4a1 1 0 0 0-1-1h-8v2h8a1 1 0 0 0 1-1zM19 13h-2v2h2a1 1 0 0 0 0-2zM0 14a1 1 0 0 0 1 1h8v-2H1a1 1 0 0 0-1 1z"/>
+  </g>
+</svg>

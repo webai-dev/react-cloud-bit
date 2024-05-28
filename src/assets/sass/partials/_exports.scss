@@ -1,0 +1,139 @@
+@import './variables';
+
+// Exports
+:export {
+  blue: $blue;
+  red: $red;
+  yellow: $yellow;
+  green: $green;
+  cyan: $cyan;
+  gold: $gold;
+  primary: $primary;
+  main: $main;
+  secondary: $secondary;
+  head: $head;
+  darkBlue: $dark-blue;
+  gray0: $gray-0;
+  gray: $gray;
+  iconOutline: $icon-outline;
+  iconInactive: $icon-inactive;
+  iconFlagged: $icon-flagged;
+
+  white: $white;
+
+  fontFamilyBase: $font-family-base;
+
+  textHead: $head;
+  textMain: $main;
+  textSec: $secondary;
+
+  disabled: $disabled;
+  selected: $selected;
+  rowSelected: $row-selected;
+
+  linesGray: $lines-gray;
+  bgGray: $bg-gray;
+  zoneGray: $zone-gray;
+  scrollbarGray: $scrollbar-gray;
+  thumbGray: $thumb-gray;
+
+  borderLinesMenu: $border-lines-menu;
+  borderShadowDropdown: $border-shadow-dropdown;
+
+  sharedFolder: $shared-folder;
+
+  borderRadiusBase: $border-radius-base;
+
+  headerH: $header-h;
+  headerHFull: $header-h-full;
+  sidebarW: $sidebar-w;
+  rightSidebarW: $right-sidebar-w;
+  bannerH: $banner-h;
+
+  alertSuccessBg: $alert-success-bg;
+  alertSuccessColor: $alert-success-color;
+  alertSuccessBorder: $alert-success-border;
+
+  alertErrorBg: $alert-error-bg;
+  alertErrorColor: $alert-error-color;
+  alertErrorBorder: $alert-error-border;
+
+  alertInfoBg: $alert-info-bg;
+  alertInfoColor: $alert-info-color;
+  alertInfoBorder: $alert-info-border;
+
+  alertWarningBg: $alert-warning-bg;
+  alertWarningColor: $alert-warning-color;
+  alertWarningBorder: $alert-warning-border;
+
+  publicText: $public-text;
+  publicLink: $public-link;
+  publicSec: $public-sec;
+  publicLightGray: $public-light-gray;
+  publicLightGrayColor: $public-light-gray-color;
+  publicBorder: $public-border;
+  publicInputBorderColor: $public-input-border-color;
+  publicAlmostBlack: $public-almost-black;
+  publicBgBlueLine: $public-bg-blue-line;
+  publicLightBg: $public-light-bg;
+
+  bitHeader: $bit-header;
+  bitFooter: $bit-footer;
+
+  bitColor1: map-get($bit-colors, 1);
+  bitColor2: map-get($bit-colors, 2);
+  bitColor3: map-get($bit-colors, 3);
+  bitColor4: map-get($bit-colors, 4);
+  bitColor5: map-get($bit-colors, 5);
+  bitColor6: map-get($bit-colors, 6);
+  bitColor7: map-get($bit-colors, 7);
+  bitColor8: map-get($bit-colors, 8);
+  bitColor9: map-get($bit-colors, 9);
+  bitColor10: map-get($bit-colors, 10);
+  bitColor11: map-get($bit-colors, 11);
+  bitColor12: map-get($bit-colors, 12);
+
+  bitSecondaryColor1: map-get($bit-colors-secondary, 1);
+  bitSecondaryColor2: map-get($bit-colors-secondary, 2);
+  bitSecondaryColor3: map-get($bit-colors-secondary, 3);
+  bitSecondaryColor4: map-get($bit-colors-secondary, 4);
+  bitSecondaryColor5: map-get($bit-colors-secondary, 5);
+  bitSecondaryColor6: map-get($bit-colors-secondary, 6);
+  bitSecondaryColor7: map-get($bit-colors-secondary, 7);
+  bitSecondaryColor8: map-get($bit-colors-secondary, 8);
+  bitSecondaryColor9: map-get($bit-colors-secondary, 9);
+  bitSecondaryColor10: map-get($bit-colors-secondary, 10);
+  bitSecondaryColor11: map-get($bit-colors-secondary, 11);
+  bitSecondaryColor12: map-get($bit-colors-secondary, 12);
+
+  breakpoint_xs: map-get($grid-breakpoints, xs);
+  breakpoint_sm: map-get($grid-breakpoints, sm);
+  breakpoint_md: map-get($grid-breakpoints, md);
+  breakpoint_lg: map-get($grid-breakpoints, lg);
+  breakpoint_landscape: map-get($grid-breakpoints, landscape);
+  breakpoint_xl: map-get($grid-breakpoints, xl);
+  breakpoint_lap: map-get($grid-breakpoints, lap);
+  breakpoint_hd: map-get($grid-breakpoints, hd);
+
+  size4: $size4;
+  size8: $size8;
+  size10: $size10;
+  size12: $size12;
+  size14: $size14;
+  size16: $size16;
+  size18: $size18;
+  size20: $size20;
+  size24: $size24;
+  size32: $size32;
+  size40: $size40;
+  size48: $size48;
+  size56: $size56;
+  size64: $size64;
+  size72: $size72;
+  size80: $size80;
+  size88: $size88;
+  size96: $size96;
+  size104: $size104;
+  size128: $size128;
+  size136: $size136;
+}

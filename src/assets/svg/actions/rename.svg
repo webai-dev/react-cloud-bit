@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20">
+  <g data-name="Rename or Edit">
+    <path class="edit-icon--1" d="M17 20H1a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2z" fill="#85b7d9"/>
+    <path class="edit-icon--2" d="M6 16H2a1 1 0 0 1-1-1v-4a1 1 0 0 1 .29-.71l10-10a1 1 0 0 1 1.42 0l4 4a1 1 0 0 1 0 1.42l-10 10A1 1 0 0 1 6 16zm-3-2h2.59l9-9L12 2.41l-9 9z" fill="#3c4858"/>
+  </g>
+</svg>

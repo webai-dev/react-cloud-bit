@@ -1,0 +1,147 @@
+html {
+  &.mod_no-cssgrid {
+    // Flexbox fallbacks
+    .bit-index-wrapper {
+      @extend .row;
+      margin-left: -$grid-gutter/2;
+      margin-right: -$grid-gutter/2;
+      @extend .mb-0;
+
+      > .bit-wrapper {
+        margin: 0 $grid-gutter/2 $grid-gutter $grid-gutter/2;
+
+        @for $i from 1 through 6 {
+          &.grid-row-#{$i} {
+            height: #{($i * $col-height) + ($i * $grid-gutter) - $grid-gutter};
+          }
+        }
+      }
+    }
+  }
+
+  &.mod_cssgrid {
+    .bit-index-wrapper {
+      display: grid;
+      grid-gap: $grid-gutter;
+
+      grid-template-columns: repeat(map-get($grid-template-columns, xs), 1fr); // 6
+
+      grid-auto-rows: $col-height;
+      grid-auto-flow: row; // Alphabetical sort
+
+      &.dense {
+        grid-auto-flow: dense;
+      }
+
+      @include media-breakpoint-up(xl) {
+        grid-template-columns: repeat(map-get($grid-template-columns, xl), 1fr); // 10
+      }
+
+      @include media-breakpoint-up(hd) {
+        grid-template-columns: repeat(auto-fill, minmax($col-width, 1fr)); // auto
+      }
+
+      // &.open {
+      // grid-template-columns: repeat(map-get($grid-template-columns, xs), 1fr); //6
+      // grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+
+      /* Flex walkaround */
+      // display: flex;
+      // flex-wrap: wrap;
+      // margin-left: -$grid-gutter/2;
+      // margin-right: -$grid-gutter/2;
+
+      // > .bit-wrapper {
+      //   margin: 0 $grid-gutter/2 $grid-gutter $grid-gutter/2;
+
+      //   @for $i from 1 through 6 {
+      //     &.grid-row-#{$i} {
+      //       height: #{($i * $col-height) + ($i * $grid-gutter) - $grid-gutter};
+      //     }
+
+      //     &.grid-column-#{$i} {
+      //       min-width: #{($i * $col-width) + ($i * $grid-gutter) - $grid-gutter};
+      //       // min-width: #{($i * $col-width) + ($i * $grid-gutter) - $grid-gutter};
+      //       // max-width: #{($i * $col-width) + ($i * $grid-gutter) - $grid-gutter};
+      //     }
+      //   }
+      // }
+      /* */
+
+      //   > .bit-wrapper {
+      //     @for $i from 1 through 6 {
+      //       &.grid-column-#{$i} {
+      //         @if $i <= 3 {
+      //           grid-column-end: span $i * 2;
+      //         } @else {
+      //           grid-column-end: span map-get($grid-template-columns, xs); //6
+      //         }
+      //       }
+      //     }
+      //   }
+
+      //   @include media-breakpoint-up(hd) {
+      //     // grid-template-columns: repeat(12, 1fr); //10
+      //     grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr)); //12
+
+      //     > .bit-wrapper {
+      //       @for $i from 1 through 6 {
+      //         &.grid-column-#{$i} {
+      //           @if $i <= 5 {
+      //             grid-column-end: span ($i * 2) + 1;
+      //           } @else {
+      //             grid-column-end: span 12; //10
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+
+      > .bit-wrapper {
+        padding: 0;
+        max-width: 100% !important;
+        grid-column-end: span 6;
+        grid-row-end: span 2;
+
+        @for $i from 1 through 6 {
+          &.grid-row-#{$i} {
+            grid-row-end: span $i;
+          }
+        }
+
+        @include media-breakpoint-up(md) {
+          @for $i from 1 through 6 {
+            &.grid-column-#{$i} {
+              @if $i <= 3 {
+                grid-column-end: span $i * 2;
+              } @else {
+                grid-column-end: span map-get($grid-template-columns, xs); //6
+              }
+            }
+          }
+        }
+
+        @include media-breakpoint-up(xl) {
+          @for $i from 1 through 6 {
+            &.grid-column-#{$i} {
+              @if $i <= 5 {
+                grid-column-end: span $i * 2;
+              } @else {
+                grid-column-end: span map-get($grid-template-columns, xl); //10
+              }
+            }
+          }
+        }
+
+        @include media-breakpoint-up(hd) {
+          @for $i from 1 through 6 {
+            &.grid-column-#{$i} {
+              grid-column-end: span $i;
+            }
+          }
+        }
+      }
+    }
+  }
+}

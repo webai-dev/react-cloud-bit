@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18" fill="#E0E6ED">
+  <defs/>
+  <g id="Settings-2" data-name="Settings">
+    <rect class="filter-1" x="5" width="4" height="8" rx="1" ry="1"/>
+    <rect class="filter-1" x="11" y="10" width="4" height="8" rx="1" ry="1"/>
+    <path class="filter-2" d="M1 5h2V3H1a1 1 0 0 0 0 2zM20 4a1 1 0 0 0-1-1h-8v2h8a1 1 0 0 0 1-1zM19 13h-2v2h2a1 1 0 0 0 0-2zM0 14a1 1 0 0 0 1 1h8v-2H1a1 1 0 0 0-1 1z"/>
+  </g>
+</svg>

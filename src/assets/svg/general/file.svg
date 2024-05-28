@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+  <g data-name="Layer 2">
+    <path d="M15 20H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h10a1 1 0 0 1 .71.29l4 4A1.05 1.05 0 0 1 16 5v14a1 1 0 0 1-1 1zM2 18h12V5.41L10.59 2H2z" fill="#3c4858"/>
+    <path d="M12.71 6.29l-3-3a1 1 0 0 0-1.09-.21A1 1 0 0 0 8 4v4h4a1 1 0 0 0 .92-.62 1 1 0 0 0-.21-1.09z" fill="#85b7d9"/>
+  </g>
+</svg>

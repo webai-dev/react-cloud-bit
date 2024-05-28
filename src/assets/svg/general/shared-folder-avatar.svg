@@ -1,0 +1,9 @@
+<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="folder-icon">
+    <g data-name="Group 1818">
+        <g data-name="Symbol 42 6">
+            <path class="folder-outer" data-name="Path 3368" d="M0,14.3a.84.84,0,0,0,.8.7H15.2a.84.84,0,0,0,.8-.7V3.45a.79.79,0,0,0-.76-.82H8.34L7.09,1.23A.88.88,0,0,0,6.51,1H.8a.79.79,0,0,0-.8.78v0H0Z" style="fill:#85B7D9"/>
+        </g>
+    </g>
+    <path class="folder-outer folder-shared" d="M10.13,9.74a2.9,2.9,0,0,0-.53-.39A2,2,0,0,1,8,10a2,2,0,0,1-1.6-.67,2.9,2.9,0,0,0-.53.39,2.82,2.82,0,0,0-.93,2.13v.43h6.12v-.43A2.83,2.83,0,0,0,10.13,9.74Z" style="fill:#F5F8FA; display: block;"/>
+    <path class="folder-outer folder-shared" d="M6.27,7.48A1.69,1.69,0,0,0,8,9,1.67,1.67,0,0,0,9.72,7.48.52.52,0,0,0,10.05,7a.5.5,0,0,0-.38-.46,1.74,1.74,0,0,0-3.34,0,.47.47,0,0,0-.39.54h0A.46.46,0,0,0,6.27,7.48Z" style="fill:#F5F8FA; display: block;"/>
+</svg>

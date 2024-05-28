@@ -1,0 +1,96 @@
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="52.8px" height="254px" viewBox="0 0 52.8 254" style="enable-background:new 0 0 52.8 254;"
+	 xml:space="preserve">
+<style type="text/css">
+	.building-svg-0{fill:#1CA6C6;}
+	.building-svg-1{fill:#1995B2;}
+	.building-svg-2{fill:#FAFAFA;}
+	.building-svg-3{fill:#C9D8E0;}
+	.building-svg-4{fill:#4E8098;}
+	.building-svg-5{fill:#75AA9B;}
+	.building-svg-6{fill:#3E6679;}
+</style>
+<defs>
+</defs>
+<g>
+	<rect y="89.8" class="building-svg-0" width="52.8" height="164.2"/>
+	<rect x="40.7" y="89.8" class="building-svg-1" width="12.1" height="164.2"/>
+	<rect x="8.6" y="77.4" class="building-svg-0" width="35.6" height="12.4"/>
+	<rect x="36" y="77.4" class="building-svg-1" width="8.1" height="12.4"/>
+	<rect x="15.5" y="68.3" class="building-svg-0" width="21.8" height="9.1"/>
+	<rect x="8.6" y="87.3" class="building-svg-1" width="27.4" height="2.5"/>
+	<rect x="15.5" y="75.5" class="building-svg-1" width="21.8" height="1.9"/>
+	<rect x="32.3" y="68.3" class="building-svg-1" width="5" height="9.1"/>
+	<rect x="18.2" y="131.9" class="building-svg-2" width="8.1" height="6.3"/>
+	<rect x="8.6" y="131.9" class="building-svg-2" width="8.1" height="6.3"/>
+	<rect x="27.9" y="139.9" class="building-svg-2" width="8.1" height="6.3"/>
+	<rect x="18.2" y="139.9" class="building-svg-2" width="8.1" height="6.3"/>
+	<rect x="27.9" y="147.9" class="building-svg-2" width="8.1" height="6.3"/>
+	<rect x="8.6" y="147.9" class="building-svg-2" width="8.1" height="6.3"/>
+	<rect x="27.9" y="155.9" class="building-svg-2" width="8.1" height="6.3"/>
+	<rect x="18.2" y="155.9" class="building-svg-2" width="8.1" height="6.3"/>
+</g>
+<g>
+	
+		<animateTransform
+			accumulate="none"
+			additive="replace"
+			attributeName="transform"
+			attributeType="xml"
+			calcMode="linear"
+			dur="1s" fill="remove"
+			from="0 25.364 26.015"
+			repeatCount="indefinite"
+			restart="always"
+			to="-360 25.364 26.015"
+			type="rotate">
+		</animateTransform>
+
+	<g>
+		<path class="building-svg-3" d="M25.4,25.8c1.9-1.5,1.7-11.5,1.1-18.7c-0.4,0-0.7,0-1.1,0c-0.4,0-0.7,0-1.1,0C23.7,14.3,23.4,24.4,25.4,25.8z
+			"/>
+		<path class="building-svg-4" d="M26.5,7.2c-0.4-4-0.8-7.2-1.1-7.2s-0.7,3-1.1,7.2c0.4,0,0.7,0,1.1,0S26.1,7.2,26.5,7.2z"/>
+	</g>
+	<g>
+		<path class="building-svg-3" d="M25.4,25.8c-2.2-1-10.9,4.2-16.7,8.4c0.4,0.6,0.7,1.3,1.1,1.9C16.1,33.1,25,28.3,25.4,25.8z"/>
+		<path class="building-svg-4" d="M3,38.8c0.1,0.2,3-0.8,6.7-2.5c-0.4-0.6-0.7-1.2-1.1-1.9C5.3,36.6,2.9,38.6,3,38.8z"/>
+	</g>
+	<g>
+		<path class="building-svg-4" d="M42.1,34.2c-0.4,0.6-0.7,1.3-1.1,1.9c3.6,1.7,6.6,2.9,6.7,2.5C47.8,38.6,45.4,36.6,42.1,34.2z"/>
+		<path class="building-svg-3" d="M25.4,25.8c0.4,2.4,9.1,7.3,15.7,10.3c0.4-0.6,0.7-1.2,1.1-1.9C36.3,30.2,27.5,25,25.4,25.8z"/>
+	</g>
+</g>
+<g>
+	
+		<animateTransform
+			accumulate="none"
+			additive="replace"
+			attributeName="transform"
+			attributeType="xml"
+			calcMode="linear"
+			dur="1s"
+			fill="remove"
+			from="0 25.364 26.89"
+			repeatCount="indefinite"
+			restart="always"
+			to="-360 25.364 26.89"
+			type="rotate">
+		</animateTransform>
+
+	<path class="building-svg-5" d="M28.5,16.3c4.5,1.3,7.8,5.7,7.8,10.7c0,0.8-0.1,1.6-0.2,2.3l0.4,0.5c0.2-1,0.4-1.8,0.4-2.8
+		c0-5.3-3.5-9.8-8.4-11.2L28.5,16.3z"/>
+	<path class="building-svg-5" d="M14.7,29.5c-0.2-0.8-0.2-1.7-0.2-2.5c0-5,3.3-9.3,7.8-10.7c0-0.1,0.1-0.4,0.1-0.5c-4.9,1.3-8.4,5.8-8.4,11.2
+		c0,1,0.1,1.8,0.4,2.7C14.4,29.6,14.6,29.6,14.7,29.5z"/>
+	<path class="building-svg-5" d="M33.3,34.8c-1.9,2.1-4.7,3.4-7.9,3.4c-3,0-5.8-1.3-7.8-3.3c-0.1,0.1-0.4,0.1-0.5,0.2c2.1,2.2,5,3.6,8.3,3.6
+		s6.2-1.5,8.3-3.6C33.5,35,33.4,34.8,33.3,34.8z"/>
+	<path class="building-svg-5" d="M29.5,12.7c5.9,1.8,10.3,7.5,10.3,14.2c0,1.1-0.1,2.1-0.4,3l0.5,0.7c0.2-1.2,0.5-2.4,0.5-3.8
+		c0-7-4.7-13-11-14.9L29.5,12.7z"/>
+	<path class="building-svg-5" d="M11.2,30.2c-0.2-1.1-0.4-2.2-0.4-3.4c0-6.7,4.4-12.3,10.3-14.2c0-0.2,0.1-0.5,0.1-0.7c-6.4,1.8-11,7.8-11,14.9
+		c0,1.2,0.1,2.4,0.5,3.5C10.8,30.5,11,30.3,11.2,30.2z"/>
+	<path class="building-svg-5" d="M35.8,37.3c-2.7,2.8-6.3,4.5-10.4,4.5c-4,0-7.6-1.7-10.3-4.4c-0.2,0.1-0.4,0.1-0.6,0.2
+		c2.8,2.9,6.7,4.9,10.9,4.9c4.4,0,8.3-1.8,11-4.9C36.2,37.4,35.9,37.4,35.8,37.3z"/>
+</g>
+<polygon class="building-svg-6" points="29.1,68.4 24.6,68.4 26.1,26.8 27.8,26.8 "/>
+<path class="building-svg-4" d="M32.9,25.2h-6.5v-0.4h-0.2c-3,0-5.5,0.8-5.5,1.9c0,1.1,2.4,1.9,5.5,1.9c0.1,0,0.1,0,0.2,0v-0.5h6.5V25.2z"/>
+</svg>

@@ -1,0 +1,219 @@
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="70.3px" height="63.8px" viewBox="0 0 70.3 63.8" style="enable-background:new 0 0 70.3 63.8;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#313638;}
+	.st1{fill:#FFBC42;}
+	.st2{fill:#61C0DA;}
+	.st3{fill:#EB5160;}
+</style>
+<defs>
+</defs>
+<path id="Fill-1_1_" class="st0" d="M4.6,61.7c-1,1.6-2.3,2.5-3.1,2c-0.7-0.5-1.4-1.4-1.6-2.3c-0.2-0.9,1.1-1.6,2.7-1.9
+	c0.1-0.4,0.2-0.8,0.4-1.1c0.5-1,1.8-1.4,3-1c0.5,0.2,0.8,0.1,1.2-0.2c0.3-0.3,0.6-0.5,1-0.7c0.8-0.5,1.3-0.9,1.3-2
+	c0-1.8,2.1-2.8,3.9-2.1c0.4,0.2,0.8,0.1,1.2-0.1c1.3-0.9,2.6-1.8,3.9-2.6c0.2-0.2,0.5-0.5,0.6-0.9c0.3-1.2,1.2-1.8,2.5-1.7
+	c0.3,0.1,0.8-0.1,1-0.2c2-1.3,4-2.7,6-4.1c0.2-0.2,0.4-0.5,0.5-0.9c0.2-1.3,1.3-2.1,2.7-1.8c0.3,0,0.7,0,0.9-0.2c1.5-1,3-2,4.5-3.1
+	c0.2-0.2,0.5-0.5,0.6-0.9c0.3-1.2,1.2-1.8,2.4-1.6c0.3,0.1,0.7,0,0.9-0.2c1.6-1,3.2-2.1,4.7-3.1c0.2-0.2,0.4-0.5,0.5-0.9
+	c0.2-1.2,1.2-1.8,2.4-1.6c0.3,0.1,0.8,0,1-0.2c1.1-0.7,2.2-1.4,3.3-2.2c0.2-0.1,0.2-0.2,0.4-0.3c0.4-0.1,0.9,0,1.4,0
+	c-0.2,0.4-0.3,0.9-0.6,1.1c-1.1,0.9-2.4,1.7-3.6,2.5c-0.3,0.2-0.6,0.4-0.6,0.9c0,1.3-1.2,2-2.5,1.7c-0.3-0.1-0.8,0-1,0.2
+	c-1.5,1-3,2-4.4,3c-0.2,0.2-0.5,0.6-0.4,0.9c0,1.4-1.3,2.3-2.7,1.9c-0.3-0.1-0.8-0.1-1,0.1c-1.5,1-3,2-4.4,3
+	c-0.2,0.2-0.4,0.5-0.4,0.7c-0.1,1.5-1.3,2.4-2.8,1.9c-0.3,0-0.7-0.1-0.9,0.1c-2,1.3-4,2.7-6,4.1c-0.2,0.2-0.4,0.5-0.4,0.8
+	c-0.1,1.5-1.4,2.4-2.9,1.9c-0.3-0.1-0.8-0.1-1,0.1c-1.3,0.8-2.5,1.7-3.7,2.5c-0.4,0.3-0.6,0.4-0.4,0.9c0.2,1.1-0.2,1.9-1.1,2.6
+	c-0.9,0.7-1.9,0.7-3,0.2c-0.5-0.2-0.9-0.3-1.2,0.1c-0.3,0.3-0.6,0.5-1,0.7c-0.6,0.4-1.1,0.8-1.1,1.7c0.1,1.1-1.2,2-2.4,1.9
+	C5.2,61.8,4.9,61.8,4.6,61.7">
+	
+		<animateTransform
+			accumulate="none"
+			additive="replace"
+			attributeName="transform"
+			attributeType="xml"
+			calcMode="linear"
+			dur="2.6s"
+			fill="remove"
+			from="5 27.539 45.7"
+			repeatCount="indefinite"
+			restart="always"
+			to="0 27.539 45.7"
+			type="rotate"/>
+
+</path>
+
+<path d="M60,23 L48,10" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath3"/>
+<polygon id="Fill-4_1_" class="st1" points="5.3,0 5,3 7.8,4.3 4.8,4.9 4.5,7.9 3,5.3 0,6 2,3.7 0.5,1.1 3.3,2.3">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath3"/>
+        	</animateMotion>
+</polygon>
+
+<path d="M60,23 L60,11.1" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath4"/>
+<polygon id="Fill-6_1_" class="st2" points="3.4,0 3.2,2 5,2.7 3.1,3.2 2.9,5.1 1.9,3.4 0,3.8 1.3,2.4 0.3,0.7 2.1,1.5">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath4"/>
+        	</animateMotion>
+</polygon>
+
+<path d="M60,23 L58.8,38" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath2"/>	
+	<polygon id="Fill-8_1_" class="st1" points="4,0 4.9,2.9 8,2.9 5.5,4.7 6.5,7.6 4,5.8 1.5,7.6 2.5,4.7 0,2.9 3,2.9">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath2"/>
+        	</animateMotion>
+	</polygon>
+
+<path d="M60,23 L59,18.3" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath6"/>
+<polygon id="Fill-10_1_" class="st3" points="2.4,0 2.2,1.4 3.5,1.9 2.1,2.2 2,3.5 1.3,2.4 0,2.7 0.9,1.6 0.2,0.5 1.5,1">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath6"/>
+        	</animateMotion>
+</polygon>
+
+<path d="M60,23 L68,34" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath8"/>	
+<polygon id="Fill-12_1_" class="st3" points="2.5,0 2.3,1.3 3.5,2 2.2,2.2 1.9,3.5 1.3,2.3 0,2.5 1,1.5 0.4,0.3 1.6,1">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath8"/>
+        	</animateMotion>
+
+</polygon>
+
+<path d="M60,23 L60,32" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath"/>	
+	<polygon id="Fill-12-Copy_1_" class="st3" points="1,0 2.2,0.8 3.5,0.3 3.1,1.6 4,2.7 2.6,2.7 1.8,3.9 1.4,2.6 0,2.3 1.1,1.4">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath"/>
+        	</animateMotion>
+	</polygon>
+
+<path d="M60,23 L57,4" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath5"/>
+<polygon id="Fill-14_1_" class="st3" points="4.2,0 3.9,2.4 6.1,3.3 3.8,3.8 3.5,6.2 2.3,4.2 0,4.7 1.6,2.9 0.4,0.8 2.6,1.8 ">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath5"/>
+        	</animateMotion>
+</polygon>
+
+<path d="M60,23 L64,27.3" stroke-width="0" fill="none" stroke="#e9e9e9" id="theMotionPath7"/>
+<polygon id="Fill-16_1_" class="st2" points="2,0 2.2,1.3 3.5,1.6 2.3,2.2 2.5,3.5 1.5,2.5 0.3,3.1 0.9,1.9 0,1 1.3,1.2">
+			<animate
+				id="animation1"
+				attributeName="opacity" 
+				values="0; 0.1; 1"
+	    		keyTimes="0; 1.5;  2.6"
+				repeatCount="indefinite"/>
+			<animateTransform
+				attributeType="xml"
+                attributeName="transform"
+                type="scale"
+                from="0"
+                to="1"
+                dur="2.6s"
+                repeatCount="indefinite"
+                fill="freeze" />
+			<animateMotion dur="2.6s" repeatCount="indefinite" fill="freeze">
+        		<mpath xlink:href="#theMotionPath7"/>
+        	</animateMotion>
+</polygon>
+</svg>
